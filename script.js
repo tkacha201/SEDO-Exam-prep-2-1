@@ -26,4 +26,12 @@ list.addEventListener("dblclick", (e) => {
   }
 });
 
-// change 2
+// Clear all completed tasks
+const clearBtn = document.getElementById("clear-completed-btn");
+clearBtn.addEventListener("click", () => {
+  document
+    .querySelectorAll("#task-list li.completed")
+    .forEach((li) => li.remove());
+});
+
+// Branch 2
